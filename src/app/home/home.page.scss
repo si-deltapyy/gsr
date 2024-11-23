@@ -1,0 +1,75 @@
+.img {
+  position: absolute;
+  top: 10%; /* Adjust the position of the image */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px; /* Or a percentage of the container */
+  height: auto;
+  z-index: 1; /* Ensure image is behind text */
+  filter: invert(white, 100%);
+}
+
+  .bg-hero {
+  background-color: #f4f6fa; // Modify as needed for the hero section background color
+  padding-top: 7rem; // Adjust to your preference for spacing
+  padding-bottom: 7rem;
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .col-md-8,
+  .col-sm-10,
+  .col-12 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .heading-black {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+
+  .lead {
+    font-size: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .btn-primary {
+    --background: #007bff; // Customize the background color of the button
+    --color: #fff; // Customize the text color
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 24px;
+    font-size: 1rem;
+
+    ion-icon {
+      margin-left: 0.5rem;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .heading-black {
+      font-size: 1.8rem;
+    }
+
+    .lead {
+      font-size: 1rem;
+    }
+  }
+}

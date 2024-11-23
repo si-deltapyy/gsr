@@ -1,25 +1,16 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Inbox
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-refresher slot="fixed" (ionRefresh)="refresh($event)">
-    <ion-refresher-content></ion-refresher-content>
-  </ion-refresher>
-  
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">
-        Inbox
-      </ion-title>
-    </ion-toolbar>
-  </ion-header>
-  
-  <ion-list>
-    <app-message *ngFor="let message of getMessages()" [message]="message"></app-message>
-  </ion-list>
+<ion-content class="bg-hero">
+  <div class="container">
+    <div class="row vh-md-100">
+      <img src="../../assets/img/logo.png" alt="" class="img">
+      <div class="col-md-8 col-sm-10 col-12 mx-auto my-auto text-center">
+        <h1 class="heading-black text-capitalize">GSR Tools</h1>
+        <p class="lead">Knight is a platform that helps freelancers and companies build beautiful landing
+          pages in minutes. Sign up for free.</p>
+        <ion-button [routerLink]="'/auth'" expand="block" class="btn-primary" >
+          Start
+          <ion-icon name="arrow-forward-outline" slot="end"></ion-icon>
+        </ion-button>
+      </div>
+    </div>
+  </div>
 </ion-content>
