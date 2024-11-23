@@ -1,0 +1,8 @@
+{
+  "name": "gsr",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "48b15da2"
+}
