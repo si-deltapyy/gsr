@@ -18,10 +18,11 @@ const routes: Routes = [
   {
     path: 'auth',
     loadChildren: () => import('./auth/auth.module').then( m => m.AuthPageModule)
-  },  {
-    path: 'scan-ble',
-    loadChildren: () => import('./scan-ble/scan-ble.module').then( m => m.ScanBlePageModule)
   },
+  // {
+  //   path: 'scan-ble',
+  //   loadChildren: () => import('./scan-ble/scan-ble.module').then( m => m.ScanBlePageModule)
+  // },
 
 
 ];
